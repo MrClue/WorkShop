@@ -15,20 +15,18 @@ public class Main {
         ba.getBuildings().get(1).addActuator(new Actuators("Actuator_01", 4.0));
         ba.getBuildings().get(1).addActuator(new Actuators("Actuator_02", 5.0));
         
-        System.out.println(ba.toString());
-        System.out.println(ba.getBuildings().get(1).sensorToString());
-        System.out.println(ba.getBuildings().get(1).actuatorToString());
-        
-        
+        System.out.println(ba.toString() + "\n");
+        System.out.println(ba.getBuildings().get(1).sensorToString() + "\n");
+        System.out.println(ba.getBuildings().get(1).actuatorToString() + "\n");
+
         ba.removeBuilding("U55", 1);
+        System.out.println(ba.toString() + "\n");
+
         ba.getBuildings().get(0).removeSensor("TempSensor_01");
-        System.out.println(ba.getBuildings().get(0).sensorToString());
+        System.out.println(ba.getBuildings().get(0).sensorToString() + "\n");
         ba.getBuildings().get(0).removeActuator("Actuator_01");
-        System.out.println(ba.getBuildings().get(0).actuatorToString());
+        System.out.println(ba.getBuildings().get(0).actuatorToString() + "\n");
         ba.getBuildings().get(0).getActuators().get(0).setPoint(0.0);
-        System.out.println(ba.getBuildings().get(0).getActuators().get(0).getPoint());
-        
-        
-        System.out.println(ba.toString());
+        System.out.println("Point: " + ba.getBuildings().get(0).getActuators().get(0).getPoint() + "\n");
     }
 }
