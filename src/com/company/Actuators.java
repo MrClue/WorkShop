@@ -6,7 +6,12 @@ public class Actuators {
     public ActuatorType type = ActuatorType.Ventilator;
     private double setPoint;
 
-
+    public Actuators(String name, double setPoint)
+    {
+        this.name = name;
+        this.setPoint = setPoint;
+    }
+    
     public String getName() {
         return name;
     }

@@ -37,4 +37,16 @@ public class BuildingAdministrator {
     {
         return buildings;
     }
+    
+    @Override
+    public String toString()
+    {
+        String returnString = "Buildings:";
+        for (int i = 0; i < buildings.size(); i++)
+        {
+            returnString += "\n" + buildings.get(i).getName() + "(id: " + buildings.get(i).getId() + ")";
+        }
+        
+        return returnString;
+    }
 }
