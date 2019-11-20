@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Building {
     private String name;
     private int id;
-    private ArrayList sensors;
-    private ArrayList actuators;
+    private ArrayList<Sensor> sensors;
+    private ArrayList<Actuators> actuators;
 
     
     public Building(String name, int id)
@@ -16,7 +16,7 @@ public class Building {
     }
     
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getId()
@@ -25,10 +25,10 @@ public class Building {
     }
     
     public ArrayList getSensors() {
-        return sensors;
+        return this.sensors;
     }
 
     public ArrayList getActuators() {
-        return actuators;
+        return this.actuators;
     }
 }
