@@ -8,14 +8,14 @@ public class Building {
     private ArrayList actuators;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public ArrayList getSensors() {
-        return sensors;
+        return this.sensors;
     }
 
     public ArrayList getActuators() {
-        return actuators;
+        return this.actuators;
     }
 }
